@@ -139,9 +139,7 @@ h6 {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
-.logo:focus {
-  background-color: var(--white);
-}
+
 .color-web {
   color: var(--blue);
 }
