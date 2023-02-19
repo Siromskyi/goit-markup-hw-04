@@ -7,6 +7,7 @@
   --white-two: #e7e9fc;
   --white-three: #f4f4fd;
   --green-hover: #31d0aa;
+  --customers-icon: #8e8f99;
 }
 
 * {
@@ -212,6 +213,7 @@ h6 {
 
 .advantages-svg {
   display: flex;
+  fill: var(--navy);
 }
 
 .advantages-link {
@@ -259,13 +261,48 @@ h6 {
   margin-right: 24px;
 }
 
+/*Клиенты*/
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+}
+.customers-item {
+  flex-basis: calc((100%-108) / 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link :focus {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--customers-icon);
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: var(--customers-icon);
+}
 /*socials*/
 .socials-list {
   display: flex;
   justify-content: center;
   padding-top: 8px;
-  gap: 24px;
   padding-bottom: 32px;
+  gap: 24px;
 }
 .socials-list-footer {
   display: flex;
@@ -308,7 +345,16 @@ h6 {
 .socials-item :hover {
   background-color: var(--cl-hover);
 }
+
+.socials-item :focus {
+  background-color: var(--cl-hover);
+}
+
 .socials-item-footer :hover {
+  background-color: var(--green-hover);
+}
+
+.socials-item-footer :focus {
   background-color: var(--green-hover);
 }
 /*footer*/
@@ -384,6 +430,11 @@ h6 {
 }
 .projects-item {
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.projects-link :hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .projects-text {
   border-left: 1px solid var(--white-two);
