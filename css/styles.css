@@ -195,6 +195,34 @@ h6 {
   line-height: 1.5;
 }
 
+/*advantages*/
+.advantages-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-icons-list {
+  flex-basis: calc((100%-72) / 4);
+  padding: 24px 100px;
+  background-color: var(--white-three);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.advantages-svg {
+  display: flex;
+}
+
+.advantages-link {
+  display: flex;
+  width: 64px;
+  height: 64px;
+}
+
+.list-advantages {
+  flex-basis: calc((100%-72) / 4);
+}
+
 /*What are we doing*/
 
 .section-we-doing {
@@ -218,6 +246,7 @@ h6 {
 
 .team-name {
   padding: 32px 0;
+  padding-bottom: 0px;
 }
 
 .list {
@@ -228,10 +257,38 @@ h6 {
 .list-general:not(:last-child) {
   margin-right: 24px;
 }
-.list-advantages {
-  flex-basis: calc((100%-72) / 4);
+
+/*socials*/
+.socials-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.socials-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--white-three);
 }
 
+.socials-item {
+  width: 40px;
+  height: 40px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+.socials-item :hover {
+  background-color: var(--cl-hover);
+}
 /*footer*/
 
 .footer {
@@ -248,7 +305,21 @@ h6 {
   letter-spacing: 0.02em;
   width: 264px;
   margin-top: 16px;
+  text-align: left;
 }
+.text-social-media {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.container-footer {
+  display: flex;
+}
+
 /*main button*/
 
 .main-button {
