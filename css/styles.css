@@ -283,6 +283,7 @@ h6 {
 .customers-link :focus {
   border-color: var(--blue);
   color: var(--blue);
+  fill: var(--blue);
 }
 
 .customers-link {
