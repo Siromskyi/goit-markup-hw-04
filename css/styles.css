@@ -288,6 +288,7 @@ h6 {
 .customers-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 .customers-icon {
   width: 104px;
@@ -300,7 +301,7 @@ h6 {
   height: 88px;
 }
 
-.customers-link :focus {
+.customers-item :hover {
   color: var(--blue);
   border-color: var(--blue);
 }
