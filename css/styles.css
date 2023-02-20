@@ -95,6 +95,7 @@ h6 {
   color: var(--cl-hover);
   background-color: var(--white);
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -291,8 +292,6 @@ h6 {
   justify-content: center;
 }
 .customers-icon {
-  width: 104px;
-  height: 56px;
   fill: currentColor;
 }
 .customers-item {
@@ -302,6 +301,10 @@ h6 {
 }
 
 .customers-item :hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+.customers-item :focus {
   color: var(--blue);
   border-color: var(--blue);
 }
